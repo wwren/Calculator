@@ -1,40 +1,41 @@
-@import '~antd/dist/antd.css';
+@import "~antd/dist/antd.css";
 
-.App {
-  text-align: center;
+.number {
+  display: grid;
+  grid-template: repeat(3, 40px) / repeat(3, 35px);
+  column-gap: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.equation {
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mathFunction {
+  margin-left: 5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 40px;
+  height: 151px;
 }
 
-.App-link {
-  color: #61dafb;
+.mathFunction > * {
+  margin-bottom: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  display: flex;
+}
+
+.output {
+  border: 2px solid rebeccapurple;
+  width: 160px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ans {
+  font-weight: 100;
+  font-size: 10px;
 }
