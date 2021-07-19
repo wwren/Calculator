@@ -4,17 +4,19 @@ import { MathFunctional, Equation, FormatNumber } from './Components/Functional'
 import { AllClear, Clear } from './Components/Clear';
 import './App.css';
 import { MathKeys } from './Helper/types';
+import {Toggle} from './Components/Toggle';
 
 
 
 function App() {
   const [evaluation, setEvaluation] = useState<string>("0");
   const [ans, setAns] = useState<string>(" ");
+  const [toggled, setToggled] = useState<boolean>(false);
 
   return (
     <>
     <div className ="theme-toggle" > 
-      My Calculator
+      <Toggle setToggle={setToggled} toggled={toggled} /> 
     </div>
     <div className="calculator">
     <div className="output">
