@@ -7,7 +7,7 @@ import { PresetColorTypes } from 'antd/lib/_util/colors';
 export function MathFunctional({mathFunctionalKey,  prevState, setEvaluation}:{mathFunctionalKey: MathKeys, prevState: string, setEvaluation: (x:any) => void}) {
   let symbol = mathFunctionalKeyToSymbol[mathFunctionalKey]
   return (
-    <Button type="primary" shape="round" onClick={() => setEvaluation(prevState.concat(` ${symbol} `))}>{symbol} </Button>
+    <Button type="primary" size="large" shape="round" onClick={() => setEvaluation(prevState.concat(` ${symbol} `))}>{symbol} </Button>
   )
 } 
 
@@ -30,7 +30,7 @@ export function Equation({prevState, setEvaluation, setAns}:{prevState:string, s
   }
 
   return (
-    <Button className="equation" type="primary" shape="round" ghost onClick={_handleClick} >=</Button>
+    <Button className="equation" size="large" type="primary" shape="round" ghost onClick={_handleClick} >=</Button>
   )
 }
 
@@ -46,7 +46,7 @@ export function FormatNumber({formatKey, prevState, setEvaluation}: {formatKey:s
     
   }
   return (
-    <Button type="primary" shape="circle" onClick={_handleClick}>{formatKey} </Button>
+    <Button type="primary" size="large" shape="circle" onClick={_handleClick}>{formatKey} </Button>
   )
 }
 

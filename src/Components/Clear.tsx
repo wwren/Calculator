@@ -6,11 +6,11 @@ export function AllClear({prevState, setEvaluation, setAns}:{prevState: string, 
     setAns(`Ans: ${prevState}`);
     setEvaluation("0");
   }
-  return (<Button type="primary" shape="round" onClick={_handleClick}>AC</Button>)
+  return (<Button type="primary" size="large" shape="round" onClick={_handleClick}>AC</Button>)
 }
 
 
 export function Clear({prevState, setEvaluation}:{prevState: string, setEvaluation: (x:string)=> void}) {
 
-  return (<Button type="primary" shape="round" onClick={() => setEvaluation(prevState.slice(0, -1))}>C</Button>)
+  return (<Button type="primary" size="large" shape="circle" onClick={() => setEvaluation(prevState.slice(0, -1))}>C</Button>)
 }

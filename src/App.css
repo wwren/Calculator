@@ -1,9 +1,53 @@
 @import "~antd/dist/antd.css";
 
+body {
+  background: linear-gradient(#ffd0d2, #dadbee);
+}
+
+#root {
+  background-color: seashell;
+  width: 80%;
+  height: 60%;
+  margin: 0 10%;
+  box-shadow: 0 0 50px #ccc;
+  border-radius: 20px;
+}
+
+.calculator {
+  width: 75%;
+  height: 80%;
+  margin: 10% 12.5%;
+}
+
+.theme-toggle {
+  width: 65%;
+  text-align: center;
+  margin: 0 20%;
+}
+
+@media screen and (min-width: 768px) {
+  #root {
+    width: 40%;
+    height: 60%;
+    margin: 0 30%;
+  }
+
+  .calculator {
+    width: 50%;
+    margin: 10% 25%;
+  }
+
+  .theme-toggle {
+    width: 50%;
+  }
+}
+
 .number {
+  flex-basis: 70%;
   display: grid;
   grid-template: repeat(3, 40px) / repeat(3, 35px);
-  column-gap: 5px;
+  column-gap: 15px;
+  row-gap: 10px;
 }
 
 .equation {
@@ -12,11 +56,11 @@
 }
 
 .mathFunction {
+  flex-basis: 30%;
   margin-left: 5px;
   display: flex;
   flex-direction: column;
-  width: 40px;
-  height: 151px;
+  row-gap: 2px;
 }
 
 .mathFunction > * {
@@ -25,17 +69,41 @@
 
 .container {
   display: flex;
+  margin-top: 10px;
 }
 
 .output {
-  border: 2px solid rebeccapurple;
-  width: 160px;
-  height: 40px;
+  border: 0.5px solid grey;
+  width: 100%;
+  height: 46px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
+  text-align: right;
+  justify-content: space-between;
+  padding-right: 5px;
 }
 
+.evaluation {
+  font-weight: 500;
+  font-size: 16px;
+}
 .ans {
   font-weight: 100;
-  font-size: 10px;
+  font-size: 12px;
+}
+
+.functionKey-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ant-btn-primary {
+  background-color: #db7093;
+  border-color: grey;
+}
+
+.ant-btn-background-ghost.ant-btn-primary {
+  border-color: #db7093;
+  color: #db7093;
 }

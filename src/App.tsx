@@ -6,20 +6,27 @@ import './App.css';
 import { MathKeys } from './Helper/types';
 
 
+
 function App() {
   const [evaluation, setEvaluation] = useState<string>("0");
-  const [ans, setAns] = useState<string>("");
+  const [ans, setAns] = useState<string>(" ");
 
   return (
     <>
+    <div className ="theme-toggle" > 
+      My Calculator
+    </div>
+    <div className="calculator">
     <div className="output">
       <div className="ans"> {ans} </div>  
       <div className="evaluation">{evaluation}</div>
     </div>
-    <div>
+    <div className="functionKey-top">
       {
         ["%", "."].map(ele => <FormatNumber key={ele} formatKey={ele} prevState={evaluation} setEvaluation={setEvaluation}></FormatNumber>)
       }
+      <Clear prevState={evaluation} setEvaluation={setEvaluation} />
+      <AllClear prevState={evaluation} setEvaluation={setEvaluation} setAns={setAns} />   
     </div>
     <div className="container">
       <div className="number">
@@ -36,10 +43,9 @@ function App() {
           <MathFunctional mathFunctionalKey={ele as MathKeys} prevState={evaluation} setEvaluation={setEvaluation} key={ele} />          )
       }
       </div>
-      <div>
-        <AllClear prevState={evaluation} setEvaluation={setEvaluation} setAns={setAns} />
-        <Clear prevState={evaluation} setEvaluation={setEvaluation} />
+      <div>      
       </div>    
+    </div>
     </div>
     </>
   );
