@@ -1,15 +1,11 @@
 @import "~antd/dist/antd.css";
 
-body {
-  background: linear-gradient(#ffd0d2, #dadbee);
-}
-
 #root {
   background-color: seashell;
   width: 80%;
   height: 60%;
   margin: 0 10%;
-  box-shadow: 0 0 50px #ccc;
+  box-shadow: 0 0 10px #ccc;
   border-radius: 20px;
 }
 
@@ -106,7 +102,16 @@ body {
   border-color: grey;
 }
 
+.ant-btn-primary.night {
+  background-color: #090947;
+}
+
 .ant-btn-background-ghost.ant-btn-primary {
   border-color: #db7093;
   color: #db7093;
+}
+
+.ant-btn-background-ghost.ant-btn-primary.night {
+  border-color: #090947;
+  color: #090947;
 }

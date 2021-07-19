@@ -36,11 +36,11 @@
 }
 
 .shade.night {
-  transform: translate(-30px, 0);
+  transform: translate(-23px, 0);
 }
 
 .sm {
-  width: 25px;
+  width: 20px;
   height: 3px;
   position: inherit;
   top: -3px;
@@ -50,7 +50,7 @@
 
 .md {
   position: inherit;
-  left: 10px;
+  left: 7px;
   top: -20px;
   width: 30px;
   height: 5px;
