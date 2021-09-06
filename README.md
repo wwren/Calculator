@@ -1,50 +1,58 @@
-# Calculator
+# Tennis Court Lookup :triangular_flag_on_post: Inner West Sydney
 
-Toy project to improve React and Typescript
+<p>
+<img src="./src/assets/day.png" width="400px">
+<img src="./src/assets/night.png" width="400px">
+</p>
+### Table of Contents
 
-# Getting Started with Create React App
+- [Description](#description)
+- [License](#license)
+- [Author Info](#author-info)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+How do you normally make a booking for tennis court?
 
-### `npm start`
+1. :smile: Open the booking website of your favourite tennis court
+2. No luck :unamused: open the next best option
+3. No luck :disappointed: repeat step 2
+4. Finally a spot available! BUT BAD WEATHER :scream: os: "I've just wasted 10mins!"
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Inner West Tennis Court Lookup searches for the available time slots from the four of my favourite tennis courts, presents the weather forecast for the next 7 days and provides redirection links to those websites all at one place.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+It can be accessed at the link below.
 
-### `npm test`
+> https://tennis-timetable.web.app
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Technologies
 
-### `npm run build`
+- Frontend: React.js, JavaScript, HTML & CSS
+- Backend: Node.js
+- Cloud: Firebase function & deploy
+- Web scraping: Puppeteer
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## License
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+MIT License
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Get in touch
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<div>
+  <a href="https://www.instagram.com/ranwren/">
+    <div>@ranwren</div>
+    <img src="https://raw.githubusercontent.com/MikeCodesDotNET/MikeCodesDotNET/a8abbf37441f3253f74ea255a47f289208d7568c/Resources/instagram.svg" alt="Instagram" style="vertical-align:top; margin:4px">
+  </a>
+<a href="https://www.linkedin.com/in/ding-ran/">
+  <div>@Ran Ding</div>
+    <img src="https://raw.githubusercontent.com/MikeCodesDotNET/MikeCodesDotNET/a8abbf37441f3253f74ea255a47f289208d7568c/Resources/linkedIn.svg" alt="LinkedIn" style="vertical-align:top; margin:4px">
+  </a>
+</div>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Back To The Top](#)
